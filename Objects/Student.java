@@ -1,3 +1,4 @@
+package Objects;
 public class Student extends Person {
     private String studentId;
 

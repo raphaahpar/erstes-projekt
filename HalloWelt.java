@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+import Objects.Person;
+import Objects.Student;
+
 public class HalloWelt {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
