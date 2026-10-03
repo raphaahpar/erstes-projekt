@@ -1,6 +1,6 @@
 public class Person {
-    String name;
-    int age;
+    protected String name;
+    protected int age;
 
     public Person(String name, int age) {
         this.name = name;
@@ -15,7 +15,12 @@ public class Person {
         return age;
     }
 
-    public String toString() {
+    public String to() {
         return "Hello, " + this.name + "! You are " + this.age + " years old.";
+    }
+
+    @Override
+    public String toString() {
+        return to();
     }
 }

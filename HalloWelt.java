@@ -25,8 +25,23 @@ public class HalloWelt {
             }
         }
 
-        Person person = new Person(name, age);
-        System.out.println(person.toString());
+        scanner.nextLine();
+
+        System.out.print("Are you a student? (yes/no): ");
+        String isStudentResponse = scanner.nextLine();
+        boolean isStudent = isStudentResponse.equalsIgnoreCase("yes");
+
+        Person person;
+
+        if (isStudent) {
+            System.out.print("Please enter your student ID: ");
+            String studentId = scanner.nextLine();
+            person = new Student(name, age, studentId);
+        } else {
+            person = new Person(name, age);
+        }
+
+        System.out.println(person);
         scanner.close();
     }
 }
