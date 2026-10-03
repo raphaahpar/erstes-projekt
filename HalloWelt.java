@@ -25,8 +25,8 @@ public class HalloWelt {
             }
         }
 
-        System.out.println("Hello " + name + "! You are " + age + " years old.");
-
+        Person person = new Person(name, age);
+        System.out.println(person.toString());
         scanner.close();
     }
 }
