@@ -15,12 +15,12 @@ public class HalloWelt {
                 age = scanner.nextInt();
 
                 if (age < 0) {
-                    System.out.println("Age cannot be negative.");
+                    System.out.println("Age cannot be negative!");
                 } else {
                     break;
                 }
             } else {
-                System.out.println("Age must be a number.");
+                System.out.println("Age must be a number!");
                 scanner.next();
             }
         }
